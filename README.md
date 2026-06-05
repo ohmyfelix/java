@@ -2,13 +2,13 @@
 
 <p align=center>
    <a href="https://github.com/dockette/java/actions"><img src="https://github.com/dockette/java/actions/workflows/docker.yml/badge.svg" alt="GitHub Actions"></a>
-   <a href="https://hub.docker.com/r/dockette/java"><img src="https://img.shields.io/docker/pulls/dockette/java.svg" alt="Docker Hub pulls"></a>
+   <a href="https://hub.docker.com/u/dockette"><img src="https://img.shields.io/badge/docker-images-2496ed?logo=docker&logoColor=white" alt="Docker Hub images"></a>
    <a href="https://github.com/sponsors/f3l1x"><img src="https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ea4aaa" alt="GitHub Sponsors"></a>
    <a href="https://github.com/orgs/dockette/discussions"><img src="https://img.shields.io/badge/support-discussions-6f42c1" alt="Support/Discussions"></a>
 </p>
 
 <p align=center>
-   Ready-to-use legacy images for Java JDK 8 (OpenJDK) and Maven 3.
+   Ready-to-use legacy images for Oracle JDK 8, OpenJDK 8, and Maven 3.
 </p>
 
 -----
@@ -17,13 +17,13 @@
 
 ### Oracle JDK 8
 
-> Java 1.8.0_131-b13
+> Java 1.8.0_181-b13
 
 This Oracle Java JDK 8 image is based on Alpine linux (`dockette/alpine:3.8`).
 Docker Hub: <https://hub.docker.com/r/dockette/jdk8>
 
 ```
-docker run -v /path/to/site:/srv dockette/jdk8
+docker run -v /path/to/site:/data dockette/jdk8
 ```
 
 ### OpenJDK 8
@@ -34,7 +34,7 @@ This OpenJDK 8 image is based on Alpine linux (`dockette/alpine:3.8`).
 Docker Hub: <https://hub.docker.com/r/dockette/openjdk8>
 
 ```
-docker run -v /path/to/site:/srv dockette/openjdk8
+docker run -v /path/to/site:/data dockette/openjdk8
 ```
 
 ### Maven 3
@@ -45,7 +45,7 @@ This Maven 3 with Oracle Java JDK 8 image is based on Alpine linux (`dockette/al
 Docker Hub: <https://hub.docker.com/r/dockette/mvn>
 
 ```
-docker run -v /path/to/site:/srv dockette/mvn
+docker run -v /path/to/site:/data dockette/mvn
 ```
 
 ### OpenJDK 8 + Maven 3
@@ -54,7 +54,7 @@ This Maven 3 with OpenJDK 8 image is based on Alpine linux (`dockette/alpine:3.8
 Docker Hub: <https://hub.docker.com/r/dockette/openjdk-mvn>
 
 ```
-docker run -v /path/to/site:/srv dockette/openjdk-mvn
+docker run -v /path/to/site:/data dockette/openjdk-mvn
 ```
 
 ## Legacy Support
