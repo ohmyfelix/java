@@ -2,14 +2,14 @@
 
 ## Project
 
-Legacy Dockette Java image collection for Java 8 and Maven 3 workloads. Images are based on `dockette/alpine:3.8` and are kept for compatibility, not as current Java runtime images.
+Legacy Dockette Java image collection for Java 8 and Maven 3 workloads. Images are based on maintained Eclipse Temurin Alpine Java 8 images and are kept for compatibility, not as current Java runtime images.
 
 ## Images
 
 - Published images are `dockette/jdk8`, `dockette/openjdk8`, `dockette/mvn`, and `dockette/openjdk-mvn`.
 - Build contexts are `jdk8`, `openjdk8`, `mvn`, and `openjdk-mvn`.
-- `jdk8` and `mvn` install Oracle JDK 8 with glibc compatibility.
-- `openjdk8` and `openjdk-mvn` install Alpine OpenJDK 8 packages.
+- `jdk8` and `mvn` use Eclipse Temurin OpenJDK 8 instead of legacy Oracle downloads.
+- `openjdk8` and `openjdk-mvn` use Eclipse Temurin OpenJDK 8 instead of pinned Alpine OpenJDK packages.
 - `mvn` and `openjdk-mvn` include Maven `3.5.4` and `settings-docker.xml`.
 - GitHub Actions builds and publishes each context with the `latest` tag.
 
